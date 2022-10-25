@@ -1,0 +1,27 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 18.75rem;
+	width: 100%;
+	max-width: 25rem;
+	height: 100%;
+	margin: 0 auto;
+	transform: translateY(-9rem);
+
+	&-header {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		padding: $spacing-sm 0;
+		margin: 0 auto;
+	}
+	&-title {
+		width: 100%;
+		height: 100%;
+		color: #fff;
+		padding: $spacing-sm 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

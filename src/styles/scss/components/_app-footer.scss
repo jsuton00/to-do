@@ -1,0 +1,79 @@
+.app-footer {
+	width: 100%;
+	background-color: $veryDarkDeSaturatedBlue;
+	color: $darkGrayishBlue;
+	border-bottom-left-radius: $spacing-sm;
+	border-bottom-right-radius: $spacing-sm;
+	justify-content: space-between;
+	align-items: center;
+	padding: $spacing-xxs $spacing-sm;
+	margin: 0 auto;
+
+	&-navbar {
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: $spacing-sm $spacing-base;
+		margin-top: $spacing-sm;
+		background-color: $veryDarkDeSaturatedBlue;
+		color: $darkGrayishBlue;
+		border-radius: $spacing-sm;
+
+		&-nav-items {
+			justify-content: center;
+			align-items: center;
+			margin: 0 $spacing-base;
+		}
+
+		&-nav-link {
+			width: 22%;
+			text-align: center;
+			text-decoration: none;
+			color: $darkGrayishBlue;
+
+			&:active,
+			&:hover,
+			&:focus {
+				color: $brightBlue;
+			}
+		}
+
+		&-nav-item {
+			width: 100%;
+		}
+	}
+}
+
+.active-to-dos-counter {
+	width: 45%;
+
+	&-text {
+		font-size: $font-size-md;
+	}
+}
+
+.clear-completed-to-do-item {
+	&-section {
+		width: 55%;
+		text-align: right;
+	}
+	&-button {
+		border: none;
+		background-color: transparent;
+		padding: 0;
+		font-size: $font-size-md;
+		color: $darkGrayishBlue;
+	}
+}
+
+.all-link {
+	width: 22%;
+}
+
+.active-link {
+	width: 22%;
+}
+
+.completed-link {
+	width: 35%;
+}

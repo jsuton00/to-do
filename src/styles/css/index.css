@@ -1,0 +1,249 @@
+html {
+  box-sizing: "border-box";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: "inherit";
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: hsl(235deg, 21%, 11%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+header,
+main,
+footer,
+section,
+article,
+aside,
+caption,
+figure {
+  display: block;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+ul,
+ol,
+li,
+code,
+blockquote {
+  display: block;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 18.75rem;
+  width: 100%;
+  max-width: 25rem;
+  height: 100%;
+  margin: 0 auto;
+  transform: translateY(-9rem);
+}
+.app-header {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+}
+.app-title {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header {
+  width: 100%;
+  height: 15rem;
+}
+.header-bg-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+.toggle-button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.to-do-input {
+  width: 100%;
+  border: 0.0625rem solid hsl(235deg, 24%, 19%);
+  background-color: hsl(235deg, 24%, 19%);
+  border-radius: 0.5rem;
+  color: hsl(234deg, 39%, 85%);
+  padding: 0.5rem 3rem;
+}
+.to-do-input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+  color: hsl(234deg, 39%, 85%);
+  font-size: 1.5rem;
+  padding: 0.25rem 1rem;
+}
+
+.to-do-list {
+  width: 100%;
+  margin: 1rem 0 0;
+}
+.to-do-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: hsl(235deg, 24%, 19%);
+  color: hsl(234deg, 11%, 52%);
+}
+.to-do-list-item:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.complete-button {
+  cursor: pointer;
+}
+.complete-button-checked {
+  cursor: pointer;
+  color: #196f54;
+}
+.complete-button:hover {
+  color: #196f54;
+}
+
+.clear-button {
+  cursor: pointer;
+  margin-left: auto;
+}
+.clear-button:hover {
+  color: #921e1c;
+}
+
+.app-footer {
+  width: 100%;
+  background-color: hsl(235deg, 24%, 19%);
+  color: hsl(234deg, 11%, 52%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  margin: 0 auto;
+}
+.app-footer-navbar {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background-color: hsl(235deg, 24%, 19%);
+  color: hsl(234deg, 11%, 52%);
+  border-radius: 0.5rem;
+}
+.app-footer-navbar-nav-items {
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+}
+.app-footer-navbar-nav-link {
+  width: 22%;
+  text-align: center;
+  text-decoration: none;
+  color: hsl(234deg, 11%, 52%);
+}
+.app-footer-navbar-nav-link:active, .app-footer-navbar-nav-link:hover, .app-footer-navbar-nav-link:focus {
+  color: hsl(220deg, 98%, 61%);
+}
+.app-footer-navbar-nav-item {
+  width: 100%;
+}
+
+.active-to-dos-counter {
+  width: 45%;
+}
+.active-to-dos-counter-text {
+  font-size: 0.875rem;
+}
+
+.clear-completed-to-do-item-section {
+  width: 55%;
+  text-align: right;
+}
+.clear-completed-to-do-item-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.875rem;
+  color: hsl(234deg, 11%, 52%);
+}
+
+.all-link {
+  width: 22%;
+}
+
+.active-link {
+  width: 22%;
+}
+
+.completed-link {
+  width: 35%;
+}

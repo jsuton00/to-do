@@ -1,0 +1,25 @@
+.input {
+	&-container {
+		position: relative;
+		width: 100%;
+	}
+}
+
+.to-do-input {
+	width: 100%;
+	border: $spacing-primary solid $veryDarkDeSaturatedBlue;
+	background-color: $veryDarkDeSaturatedBlue;
+	border-radius: $spacing-sm;
+	color: $lightGrayishBlue;
+	padding: $spacing-sm $spacing-xxl + 1rem;
+
+	&-icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 5%;
+		color: $lightGrayishBlue;
+		font-size: $font-size-xl;
+		padding: $spacing-xxs $spacing-base;
+	}
+}

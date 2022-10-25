@@ -1,0 +1,40 @@
+.to-do-list {
+	width: 100%;
+	margin: $spacing-base 0 0;
+
+	&-item {
+		display: flex;
+		align-items: center;
+		gap: $spacing-base;
+		width: 100%;
+		background-color: $veryDarkDeSaturatedBlue;
+		color: $darkGrayishBlue;
+
+		&:last-child {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}
+
+.complete-button {
+	cursor: pointer;
+
+	&-checked {
+		cursor: pointer;
+		color: #196f54;
+	}
+
+	&:hover {
+		color: #196f54;
+	}
+}
+
+.clear-button {
+	cursor: pointer;
+	margin-left: auto;
+
+	&:hover {
+		color: #921e1c;
+	}
+}
